@@ -1,0 +1,107 @@
+
+
+
+/*Üstüne gelindiği zaman işaret parmağının göstermesi için yazılan komutlar*/
+
+
+FontAwesomeIconView {
+    -fx-cursor:hand;
+}
+Button{
+    -fx-cursor:hand;
+}
+
+.fare1 {
+    -fx-cursor:hand;
+}
+
+
+
+/*Buton işlemleri*/
+
+/*Program ilk başlatıldığında görüneceği şekil*/
+.button1
+{
+    -fx-background-color : #393351;
+    -fx-background-radius :  30 0 0 30;
+}
+
+/*Üstüne gelindiği zaman görüneceği şekil*/
+.button1:hover
+{
+    -fx-background-color : #524A7B ;
+    -fx-background-radius :  30 0 0 30;
+}
+
+/*Tıklandığı zaman görüleceği şekil*/
+.button1:pressed
+{
+    -fx-background-color : #2F2B43 ;
+    -fx-background-radius :  30 0 0 30;
+}
+
+.button2
+{
+    -fx-background-color : #393351;
+    -fx-background-radius :  20;
+}
+.button2:hover
+{
+    -fx-background-color : #524A7B ;
+    -fx-background-radius :  20;
+}
+.button2:pressed
+{
+    -fx-background-color : #2F2B43 ;
+    -fx-background-radius :  20;
+}
+
+.button3
+{
+    -fx-background-color : #141124;
+    -fx-background-radius :  0 0 0 0;
+}
+.button3:hover
+{
+    -fx-background-color : #524A7B ;
+}
+.button3:pressed
+{
+    -fx-background-color : #2F2B43 ;
+}
+
+.button4
+{
+    -fx-background-color :linear-gradient(to top left, #41951C, #D4CEE3);
+    -fx-background-radius :  30 30 30 30;
+}
+.button4:hover
+{
+    -fx-background-color :linear-gradient(to top left, #D4CEE3, #41951C);
+    -fx-background-radius :  30 30 30 30;
+}
+.button4:pressed
+{
+    -fx-background-color :linear-gradient(to top left, #41951C, #D4CEE3);
+    -fx-background-radius :  30 30 30 30;
+}
+
+.button5
+{
+    -fx-background-color : #FA2C56;  
+    -fx-background-radius :  20;
+}
+
+
+.button5:hover
+{
+    -fx-background-color :  #f96180;
+    -fx-background-radius :  20;
+}
+
+
+.button5:pressed
+{
+    -fx-background-color : transparent ; /*#A80022*/
+    -fx-background-radius :  20;
+}

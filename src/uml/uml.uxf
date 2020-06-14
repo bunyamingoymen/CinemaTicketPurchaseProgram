@@ -1,0 +1,1982 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <help_text>// Uncomment the following line to change the fontsize and font:
+// fontsize=14
+// fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Welcome to UMLet!
+//aaaa
+// Double-click on elements to add them to the diagram, or to copy them
+// Edit elements by modifying the text in this panel
+// Hold Ctrl to select multiple elements
+// Use Ctrl+mouse to select via lasso
+//
+// Use +/- or Ctrl+mouse wheel to zoom
+// Drag a whole relation at its central square icon
+//
+// Press Ctrl+C to copy the whole diagram to the system clipboard (then just paste it to, eg, Word)
+// Edit the files in the "palettes" directory to create your own element palettes
+//
+// Select "Custom Elements &gt; New..." to create new element types
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// This text will be stored with each diagram;  use it for notes.</help_text>
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2565</x>
+      <y>27</y>
+      <w>153</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Main::Main
+--
+--
++start(Stage stage): void
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3438</x>
+      <y>99</y>
+      <w>459</w>
+      <h>243</h>
+    </coordinates>
+    <panel_attributes>Table::Seans_Goruntule_Table
+--
+-id: String
+-salon: String
+-seans: String
+-film: String
+--
++Seans_Goruntule_Table(): ctor
++Seans_Goruntule_Table(String id, String salon, String seans, String film): ctor
++getId(): String
++setId(String id): void
++getSalon(): String
++setSalon(String salon): void
++getSeans(): String
++setSeans(String seans): void
++getFilm(): String
++setFilm(String film): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2169</x>
+      <y>99</y>
+      <w>324</w>
+      <h>207</h>
+    </coordinates>
+    <panel_attributes>Table::Filmler_Table
+--
+-id: String
+-Title: String
+-Date: String
+--
++Filmler_Table(String id, String Date, String Title): ctor
++getId(): String
++setId(String id): void
++getTitle(): String
++setTitle(String Title): void
++getDate(): String
++setDate(String Date): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2763</x>
+      <y>72</y>
+      <w>423</w>
+      <h>261</h>
+    </coordinates>
+    <panel_attributes>Table::Duyurular_Table
+--
+-id: String
+-Date: String
+-Title: String
+-Duyuru: String
+--
++Duyurular_Table(String id, String Date, String Title, String Duyuru): ctor
++getId(): String
++setId(String id): void
++getDate(): String
++setDate(String Date): void
++getTitle(): String
++setTitle(String Title): void
++getDuyuru(): String
++setDuyuru(String Duyuru): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2493</x>
+      <y>855</y>
+      <w>558</w>
+      <h>558</h>
+    </coordinates>
+    <panel_attributes>code::Dosya
+--
+--
++Dosya(): ctor
++user_dosya_ekle(int id, int authority, String mail, String user_name, String password): User
++user_dosya_oku(User user_list): User
++user_dosya_yaz(User user_list): void
++bilet_satin_al_dosya_ekle(int user_id, int salon_id, int seans_id, yesil_olan yesil, int sayac): void
++bilet_Satin_al_dosya_sil(int satin_alinan_bilet_id): int
++bilet_satin_al_dosya_oku(Bilet_Satin_Al bilet): Bilet_Satin_Al
++bilet_Satin_al_dosya_yaz(Bilet_Satin_Al bilet): void
++bilgi_dosya_yaz(int id): void
++bilgi_dosya_oku(): int
++yesil_olan_dosya_ekle(String koltuk): void
++yesil_olan_dosya_sil(String koltuk): void
++yesil_olan_dosya_hepsini_sil(): void
++yesil_olan_dosya_oku(yesil_olan yesil): yesil_olan
++yesil_olan_dosya_yaz(yesil_olan yesil): void
++duyurular_dosya_ekle(String Date, String Title, String Duyuru, int islem): Duyurular
++duyurular_dosya_sil(int id, int islem): int
++duyurular_dosya_oku(Duyurular duyuru, int islem): Duyurular
++duyurular_dosya_yaz(Duyurular duyuru, int islem): void
++filmler_dosya_ekle(String Date, String Title, int islem): Filmler
++filmler_dosya_sil(int id, int islem): int
++filmler_dosya_oku(Filmler film, int islem): Filmler
++filmler_dosya_yaz(Filmler film, int islem): void
++sinema_salonlari_dosya_guncelle(int salon_id, String name, int koltuk_sayisi): int
++sinema_salonlari_dosya_ekle(String name, int koltuk_sayisi): Sinema_Salonlari
++sinema_salonlari_dosya_sil(int sinema_salonu_id): int
++sinema_salonlari_dosya_oku(Sinema_Salonlari salon): Sinema_Salonlari
++sinema_salonlari_dosya_yaz(Sinema_Salonlari salon): void
++seans_dosya_ekle(int salon_id): void
++seans_dosya_sil(int salon_id, int seans_id): void
++seans_dosya_oku(Seans seans): Seans
++seans_dosya_yaz(Seans seans): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>4464</x>
+      <y>720</y>
+      <w>387</w>
+      <h>1134</h>
+    </coordinates>
+    <panel_attributes>code_ui::Center
+--
+#a: boolean
+#sifre_goster:boolean
+#tf_username: TextField
+#tf_usermail: TextField
+#tf_password: TextField
+#pf_password: PasswordField
+#guncelle_mesaj: Label
+#gizli: Pane
+#acik: Pane
+#kapmanya_table: TableView&lt;Duyurular_Table&gt;
+#kampanya_id: TableColumn&lt;Duyurular_Table, String&gt;
+#kampanya_date: TableColumn&lt;Duyurular_Table, String&gt;
+#kampanya_title: TableColumn&lt;Duyurular_Table, String&gt;
+#kampanya: TableColumn&lt;Duyurular_Table, String&gt;
+#haber_table: TableView&lt;Duyurular_Table&gt;
+#haber_id: ableColumn&lt;Duyurular_Table, String&gt;
+#haber_name: ableColumn&lt;Duyurular_Table, String&gt; 
+#haber_date: ableColumn&lt;Duyurular_Table, String&gt;
+#haber: ableColumn&lt;Duyurular_Table, String&gt;
+#eski_film_pane: Pane
+-eski_film_table: TableView&lt;Filmler_Table&gt;
+-eski_film_id: TableColumn&lt;Filmler_Table, String&gt; 
+-eski_film_date: TableColumn&lt;Filmler_Table, String&gt;
+-eski_film_title: TableColumn&lt;Filmler_Table, String&gt;
++vizyondaki_filmler_pane: Pane
+-vizyonda_table: TableView&lt;Filmler_Table&gt;
+-vizyonda_id: TableColumn&lt;Filmler_Table, String&gt;
+-vizyonda_date: TableColumn&lt;Filmler_Table, String&gt;
+-vizyonda_title: TableColumn&lt;Filmler_Table, String&gt;
++sinema_salonlari_pane 
++salon_bir_pane: Pane  
++salon_iki_pane: Pane
++salon_uc_pane: Pane
++salon_dort_pane: Pane
+
+#salon_bir_icin_butonlar: Button
+
+#salon_iki_icin_butonlar: Button
+
+#salon_uc_icin_butonlar: Button
+
+#salon_dort_icin_butonlar: Button
+
+--
+#initialize(URL location, ResourceBundle resources): void
+#goster(MouseEvent event): void
+#gizle(MouseEvent event): void
+#sign_out(MouseEvent event): void
+#guncelle(ActionEvent event)
+#close(MouseEvent event): void
+#max(MouseEvent event): void
+#min(MouseEvent event): void
+#duyuru_table(int islem): void
+#filmleri_getir_combo(ComboBox&lt;String&gt; combo, int islem): void
+#filmler_table(int islem): void
+#buton_aktif(Button btn): void
+#search(String koltuk, int salon_id, int seans_id): boolean
+#bir_koltuk_dolu(int salon_id, int seans_id): void
+#iki_koltuk_dolu(int salon_id, int seans_id): void
+#uc_koltuk_dolu(int salon_id, int seans_id): void
+#dort_koltuk_dolu(int salon_id, int seans_id): void
+
+#salon_bir_icin_buton_Actioneventlari: void
+
+#salon_iki_icin_buton_Actioneventlari: void
+
+#salon_uc_icin_buton_Actioneventlari: void
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>4680</x>
+      <y>1206</y>
+      <w>279</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Salon için yaklaşık 865 tane buton tanımlandı.
+Bunların hepsi uml de gösterilemedi bunun
+yerine salon_bir_için_butonlar, 
+salon_iki_icin_buotnlar şeklidne yazıldı.
+salon_bir_icin_butonlar: 129 buton
+salon_iki_icin_butonlar: 177 buton
+salon_uc_icin_butonlar: 265 buton
+salon_uc_icin_butonlar: 294 buton
+içermektedir
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>4734</x>
+      <y>1620</y>
+      <w>279</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>Salonlar için Actionevent ile yaklaşık 865 
+metot tanımlandı.
+Bunların hepsi uml de gösterilemedi bunun
+yerine salon_bir_için_Actioneventlari, 
+salon_iki_icin_Actioneventlari şeklidne yazıldı.
+salon_bir_icin_Actioneventlari: 129 metot
+salon_iki_icin_Actioneventlari: 177 metot
+salon_uc_icin_Actioneventlari: 265 metot
+salon_uc_icin_Actioneventlari: 294 metot
+içermektedir
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>5085</x>
+      <y>81</y>
+      <w>423</w>
+      <h>2349</h>
+    </coordinates>
+    <panel_attributes>sinema::appController
+--
+-buton10: Button
+-buton20: Button
+-buton30: Button
+-vizyondaki_film_sayisi: Label
+-eski_film_sayisi: Label
+-haber_Sayisi: Label
+-kampanya_sayisi: Label
+-sinema_Salonu_sayisi: Label
+-yeni_haber_uyarı_mesaj: Label
+-haberi_guncelle_sil_uyarı_mesaj: Label
+-haberi_guncelle_sil_id: Label
+-yeni_kampanya_uyari_mesaj: Label
+-kampanyalari_guncelle_sil_id: Label
+-kampanyayi_guncelle_Sil_uyari_mesaj: Label
+-yeni_eski_film_ekle_uyari_mesaj: Label
+-eski_filmleri_guncelle_sil_uyari_mesaj: Label
+-eski_filmleri_duzenle_sil_id: Label
+-vizyona_film_ekle_uyari_mesaj: Label
+-vizyondaki_filmleri_guncelle_sil_uyari_mesaj: Label
+-vizyondaki_filmleri_duzenle_sil_id: Label
+-seans_sil_uyari_mesaj: Label
+-seans_ekle_uyari_mesaj: Label
+-sinema_salonu_goruntule_uyari_mesaj: Label 
+-sinema_salonu_ekle_uyari_mesaj: Label
+-sinema_salonunu_guncelle_id: Label
+-sinema_salonu_guncelle_uyari_mesaj: Label
+-haberi_guncelle_sil_pane: Pane
+-haber_tablo_pane: Pane
+-yeni_haber_ekle_pane: Pane
+-kampanyalar_tablo_pane: Pane
+-kampanyalari_duzenle_sil_pane: Pane
+-yeni_kampanya_ekle_pane: Pane
+-eski_film_table_pane: Pane
+-eski_film_ekle_pane: Pane
+-eski_film_guncelle_sil_pane: Pane
+-vizyondaki_filmler_table_pane: Pane
+-vizyona_film_ekle_pane: Pane
+-vizyondaki_filmleri_guncelle_sil_pane: Pane
+-seans_pane: Pane
+seans_home_pane, seans_goruntule_pane: Pane
+-seans_silmekten_emin: Pane
+-seans_sil_pane: Pane
+-seans_ekle_pane: Pane
+-seans_degistirmekten_emin_pane: Pane
+-sinema_salonlari_home_pane: Pane
+-sinema_salonlari_goruntule_pane: Pane
+-sinema_salonu_ekle_pane: Pane
+-sinema_salonu_duzenle_pane: Pane
+-yeni_haber_başlık: TextField
+-yeni_haber_tarih: TextField
+-haberi_guncelle_title: TextField
+-haberi_guncelle_date: TextField
+-yeni_kampanya_title: TextField
+-yeni_kampanya_date: TextField
+-kampanyayi_guncelle_title: TextField
+-kampanyayi_guncelle_date: TextField
+-yeni_eski_film_ekle_title: TextField
+-yeni_eski_film_ekle_date: TextField
+-eski_filmleri_guncelle_date: TextField
+-eski_filmleri_guncelle_title: TextField
+-vizyondaki_filmleri_guncelle_title: TextField
+-vizyona_film_ekle_title: TextField
+-vizyona_film_ekle_date: TextField
+-vizyondaki_filmleri_guncelle_date: TextField
+-sinema_salonu_ekle_name: TextField
+-sinema_salonu_guncelle_name: TextField
+-yeni_haber: TextArea
+-haberi_guncelle_haber: TextArea
+-yeni_kampanya: TextArea
+-kampanyayi_guncelle_kampanya: TextArea
+-kampanyalari_goster: ComboBox&lt;String&gt;
+-haberleri_goster: ComboBox&lt;String&gt;
+-eski_filmleri_goster: ComboBox&lt;String&gt;
+-vizyondaki_filmleri_goster: ComboBox&lt;String&gt;
+-seans_sil_combo: ComboBox&lt;String&gt;
+-seans_ekle_film_combo: ComboBox&lt;String&gt; 
+seans_ekle_salon_combo: ComboBox&lt;String&gt;
+-seans_ekle_seans_combo: ComboBox&lt;String&gt;
+-sinema_salonlari_goruntule: ComboBox&lt;String&gt;
+-sinema_salonu_ekle_koltuk_sayisi: ComboBox&lt;String&gt;
+-sinema_salonlarini_duzenle_combo: ComboBox&lt;String&gt;
+-sinema_salonlarini_duzenle_koltuk_sayisi: ComboBox&lt;String&gt;
+-seans_table: TableView&lt;Seans_Goruntule_Table&gt;
+-gosterim_id: TableColumn&lt;Filmler_Table, String&gt;
+-seans: TableColumn&lt;Filmler_Table, String&gt;
+-salon: TableColumn&lt;Filmler_Table, String&gt;
+-film: TableColumn&lt;Filmler_Table, String&gt;
+--
+-settings(MouseEvent event): void
++initialize(URL location, ResourceBundle resources): void
+-Ana_Sayfa(): void
+-home(MouseEvent event): void
+-Buton10(ActionEvent event): void
+-Buton20(ActionEvent event): void
+-Buton30(ActionEvent event): void
+-yeni_haber_ekle(ActionEvent event): void
+-haberi_ekle(ActionEvent event): void
+-yeni_haber_ekle_geri(MouseEvent event): void
+-haberi_guncelle_sil(ActionEvent event): void
+-haberi_guncelle_sil_geri(MouseEvent event): void
+-haberi_getir(ActionEvent event): void
+-haberi_sil(ActionEvent event): void
+-haberi_guncelle(ActionEvent event): void
+-yeni_kampanya_ekle(ActionEvent event): void
+-kampanyayi_ekle(ActionEvent event): void
+-yeni_kampanya_ekle_geri(MouseEvent event): void
+-kampanyalari_guncelle_sil(ActionEvent event): void
+-kampanyayi_guncelle_sil_geri(MouseEvent event): void
+-kampanyayi_getir(): void
+-kampanyayi_sil(ActionEvent event): void
+-kampanyayi_guncelle(ActionEvent event): void
+-duyuruyu_getir_combo(int islem): void
+-yeni_eski_film_ekle(ActionEvent event): void
+-eski_filmi_ekle(ActionEvent event): void
+-yeni_eski_film_ekle_geri(MouseEvent event): void
+-eski_filmleri_duzenle_sil(ActionEvent event): void
+-eski_filmleri_getir(ActionEvent event): void
+-eski_filmi_sil(ActionEvent event): void
+-eski_filmi_guncelle(ActionEvent event): void
+-eski_filmleri_guncelle_sil_geri(MouseEvent event): void
+-vizyona_film_ekle(ActionEvent event): void
+-filmi_vizyona_ekle(ActionEvent event): void
+-vizyona_film_ekle_geri(MouseEvent event): void
+-vizyondaki_filmleri_guncelle_sil(ActionEvent event): void
+-vizyondaki_filmleri_guncelle_geri(MouseEvent event): void
+-vizyondaki_filmleri_getir(ActionEvent event): void
+-vizyondaki_filmi_sil(ActionEvent event): void
+-vizyondaki_filmi_guncelle(ActionEvent event): void
+-seans_islemleri(ActionEvent event): void
+-seans_goruntule(): void
+-seans_goruntule(ActionEvent event): void
+-seans_goruntule_geri(MouseEvent event): void
+-seanslari_sil(ActionEvent event): void
+-seansi_getir(): void
+-seansi_sil(ActionEvent event): void
+-seans_sil(ActionEvent event): void
+-seans_sil_vazgec(ActionEvent event): void
+-seans_sil_geri(MouseEvent event): void
+-salonlari_goruntule_combo(): void
+-seanslari_goruntule_combo(): void
+-seans_ekle(ActionEvent event): void
+-seansi_ekle(ActionEvent event): void
+-seans_degistir_vazgec(ActionEvent event): void
+-seans_degistir(ActionEvent event): void
+-seans_ekle_geri(MouseEvent event): void
+-koltuk_sayisi_combo(ComboBox&lt;String&gt; combo, String promp): void
+-sinema_salonlari_goruntule_combo(ComboBox&lt;String&gt; combo, String promp): void
+-sinema_salonlarini_gor(ActionEvent event): void
+-sinema_salonunu_goruntule(ActionEvent event): void
+-sinema_salonunu_goruntule_geri(MouseEvent event): void
+-yeni_sinema_salonu_ekle(ActionEvent event): void
+-salonu_ekle(ActionEvent event): void
+-yeni_sinema_salonu_ekle_geri(MouseEvent event): void
+-sinema_salonu_duzenle_sil(ActionEvent event): void
+-sinema_salonunu_getir(ActionEvent event): void
+-sinema_salonunu_sil(ActionEvent event): void
+-sinema_salonunu_guncelle(ActionEvent event): void
+-sinema_salonu_duzenle_sil_geri(MouseEvent event): void
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3492</x>
+      <y>657</y>
+      <w>387</w>
+      <h>315</h>
+    </coordinates>
+    <panel_attributes>sinema::loginController
+--
+-a: boolean
+-sifre_goster:boolean
+-tf_username: TextField
+-tf_password: TextField
+-pf_password: PasswordField
+-label: Label
+-gizli: HBox
+-acik: HBox
+--
+-login(ActionEvent event):void
+-sign_up(MouseEvent event): void
+- help(MouseEvent event): void
+-close(MouseEvent event): void
+-max(MouseEvent event): void
+-min(MouseEvent event): void
+-goster(MouseEvent event): void
+-gizle(MouseEvent event): void
+-initialize(URL location, ResourceBundle resources): void
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3357</x>
+      <y>1197</y>
+      <w>387</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>sinema::signuppController
+--
+-a: boolean
+-tf_username: TextField
+-tf_email: TextField
+-pf_password: PasswordField
+-t_text: Label
+--
++login2(MouseEvent event): void
++signup(MouseEvent event): void
++close(MouseEvent event): void
++max(MouseEvent event): void
++min(MouseEvent event): void
++initialize(URL location, ResourceBundle resources): void
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3924</x>
+      <y>1089</y>
+      <w>387</w>
+      <h>450</h>
+    </coordinates>
+    <panel_attributes>sinema:: app_standart_userController
+--
+-bilet_satin_al_pane: Pane
+-bilet_satin_al_uyari_pane: Pane
+-bilet_satin_al_filmi_sec_pane: Pane
+-bilet_satin_al_seans_sec_pane: Pane
+-bilet_satin_al_koltuk_sec_pane: Pane
+-bilet_satin_al_uyari_mesaj: Label
+-filmi_sec_uyari_mesaj: Label
+-seans_sec_uyari_mesaj: Label
+-bilet_satin_al_film_id: Label
+-bilet_satin_al_salon_id: Label
+-bilet_satin_al_seans_id: Label
+-bilet_satin_al_buton_bilet_satin_al_uyari_mesaj: Label
+-filmleri_goster: ComboBox&lt;String&gt;
+-seanslari_goster: ComboBox&lt;String&gt;
+--
++initialize(URL location, ResourceBundle resources): void
+-home(MouseEvent event): void
+-settings(MouseEvent event): void
+-vizyondai_filmler(ActionEvent event): void
+-eski_filmler(ActionEvent event): void
+-kampanyalar(ActionEvent event): void
+-haberler(ActionEvent event): void
+-bilet_satin_al(ActionEvent event): void
+-filmi_sec(ActionEvent event: void
+-seans_sec(ActionEvent event): void
+-bilet_satin_al_buton_bilet_satin_al(ActionEvent event): void
+-seanslari_goster(Goruntuleme goruntu, int j): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3204</x>
+      <y>1755</y>
+      <w>387</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>sinema:helpController
+--
+-a: boolean
+-tf_username: TextField
+-tf_useremail: TextField
+-label: Label
+-sifre: Text
+--
++initialize(URL location, ResourceBundle resources): void
+-Sifre(ActionEvent event): void
+-login(MouseEvent event): void
+-close(MouseEvent event): void
+-max(MouseEvent event): void
+-min(MouseEvent event): void
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1575</x>
+      <y>747</y>
+      <w>513</w>
+      <h>324</h>
+    </coordinates>
+    <panel_attributes>code::Kampanyalar
+--
+-next: List_Kampanyalar
+~root: List_Kampanyalar
+~iter: List_Kampanyalar
+--
++List_Kampanyalar(): ctor
++List_Kampanyalar(int kampanya_id, String Date, String Title, String Duyuru): ctor
++getNext(): List_Kampanyalar
++setNext(List_Kampanyalar next): void
++add(int kampanya_id, String Date, String Title, String Kampanya): void
++remove(): void
++remove(int id): void
++sayac(): int
++bos(): boolean
++id_Onarim(): void
++Date(int id): String
++Title(int id): String
++Duyuru(int id): String
++guncelle(int id, String Date, String Title, String Kampanya, Kampanyalar kampanya): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1575</x>
+      <y>1107</y>
+      <w>567</w>
+      <h>468</h>
+    </coordinates>
+    <panel_attributes>/code::Duyurular/
+--
+-duyuru_id: int
+-Date: String
+-Title: String
+-Duyuru: String
+-next: List_Duyurular
+~root: List_Duyurular
+~iter: List_Duyurular
+--
++List_Duyurular(): ctor
++List_Duyurular(int duyuru_id, String Date, String Title, String Duyurular, List_Duyurular next): ctor
++List_Duyurular(int duyuru_id, String Date, String Title, String Duyuru): ctor
++getDuyuru_id(): int
++getDate(): String
++getTitle(): String
++setDuyuru_id(int duyuru_id): void
++getNext(): List_Duyurular
++setNext(List_Duyurular next): void
++getDuyuru(): String
++setDate(String Date): void
++setTitle(String Title): void
++setDuyuru(String Duyuru): void
++add(int id, String Date, String Title, String Duyurular): void
++remove(): void
++remove(int id): void
++sayac(): int
++bos(): boolean
++id_Onarim(): void
++Date(int id): String
++Title(int id): String
++Duyuru(int id): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1593</x>
+      <y>1611</y>
+      <w>423</w>
+      <h>324</h>
+    </coordinates>
+    <panel_attributes>code::Haberler
+--
+-next: List_Haberler
+~root: List_Haberler
+~iter: List_Haberler
+--
++List_Haberler(): ctor
++List_Haberler(int haber_id, String Date, String Title, String Duyuru): ctor
++getNext(): List_Haberler
++setNext(List_Haberler next): void
++add(int id, String Date, String Title, String Haber): void
++remove(): void
++remove(int id): void
++sayac(): int
++bos(): boolean
++id_Onarim(): void
++Date(int id): String
++Title(int id): String
++Duyuru(int id): String
++guncelle(int id, String date, String title, String duyuru, Haberler haber): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>918</x>
+      <y>783</y>
+      <w>351</w>
+      <h>324</h>
+    </coordinates>
+    <panel_attributes>code::Eski_Filmler
+--
+-next: List_Eski_Filmler
+~root: List_Eski_Filmler
+~iter: List_Eski_Filmler
+--
++List_Eski_Filmler(): ctor
++List_Eski_Filmler(int id, String Date, String Title): ctor
++getNext(): List_Eski_Filmler
++setNext(List_Eski_Filmler next): void
++add(int id, String Date, String Title): void
++remove(): void
++remove(int id): void
++sayac(): int
++bos(): boolean
++id_Onarim(): void
++guncelle(int id, String Date, String Title): int
++Film_Adi(int id): String
++Date(int id): String
++Title(int id): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>882</x>
+      <y>1143</y>
+      <w>387</w>
+      <h>432</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+code::Filmler
+--
+-id: int
+-Date: String
+-Title: String
+-next: List_Filmler
+--
++List_Filmler(): ctor
++List_Filmler(int id, String Date, String Title): ctor
++List_Filmler(int id, String Date, String Title, List_Filmler next): ctor
++getTitle(): String
++getDate(): String
++getId(): int
++setId(int id): void
++getNext(): List_Filmler
++setNext(List_Filmler next): void
++setDate(String Date): void
++setTitle(String Title): void
++add(int id, String Title, String Date): void
++remove(): void
++remove(int id): void
++sayac(): int
++bos(): boolean
++id_Onarim(): void
++guncelle(int id, String Date, String Title): int
++Film_Adi(int id): String
++Date(int id): String
++Title(int id): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>891</x>
+      <y>1620</y>
+      <w>369</w>
+      <h>351</h>
+    </coordinates>
+    <panel_attributes>code::Vizyondaki_Filmler
+--
+-next: List_Vizyondaki_Filmler
+~root: List_Vizyondaki_Filmler
+~iter: List_Vizyondaki_Filmler
+--
++List_Vizyondaki_Filmler(): ctor
++List_Vizyondaki_Filmler(int id, String Date, String Title): ctor
++getNext(): List_Vizyondaki_Filmler
++setNext(List_Vizyondaki_Filmler next): void
++add(int vizyondaki_filmler_id, String Date, String Title): void
++remove(): void
++remove(int id): void
++sayac(): int
++bos(): boolean
++id_Onarim(): void
++guncelle(int id, String Date, String Title): int
++Film_Adi(int id): String
++Date(int id): String
++Title(int id): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>963</x>
+      <y>90</y>
+      <w>252</w>
+      <h>351</h>
+    </coordinates>
+    <panel_attributes>code::yesil_olan
+--
+-id: int
+-koltuk: String
+-next: List_yesil_olan
+~root: List_yesil_olan
+~iter: List_yesil_olan
+--
++List_yesil_olan(): ctor
++List_yesil_olan(int id, String koltuk): ctor
++getKoltuk(): String
++setKoltuk(String koltuk): void
++getNext(): List_yesil_olan
++setNext(List_yesil_olan next): void
++getId(): int
++setId(int id): void
++add(int id, String koltuk): void
++remove(int id): void
++remove(): void
++remove(String koltuk): void
++id_Onarim(): void
++sayac(): int
++bos(): boolean
++koltuk(int id): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1539</x>
+      <y>0</y>
+      <w>414</w>
+      <h>405</h>
+    </coordinates>
+    <panel_attributes>code::Goruntuleme
+--
+-goruntuleme_id: int
+-salon_id: int
+-seans_id: int
+-next: List_Goruntuleme
+~root: List_Goruntuleme
+~iter: List_Goruntuleme
+--
++List_Goruntuleme(): ctor
++List_Goruntuleme(int goruntuleme_id, int salon_id, int seans_id): ctor
++getGoruntuleme_id(): int
++setGoruntuleme_id(int goruntuleme_id): void
++getSalon_id(): int
++setSalon_id(int salon_id): void
++getSeans_id(): int
++setSeans_id(int seans_id): void
++getNext(): List_Goruntuleme
++setNext(List_Goruntuleme next): void
++add(int goruntuleme_id, int salon_id, int seans_id): void
++remove(): void
++remove(int goruntuleme_id): void
++id_Onarim(): void
++sayac(): int
++salon_id(int goruntuleme_id): int
++seans_id(int goruntuleme_id): int
++bos(): boolean
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>225</y>
+      <w>585</w>
+      <h>540</h>
+    </coordinates>
+    <panel_attributes>code::Bilet_Satin_Al
+--
+-satin_alinan_bilet_id: int
+-user_id: int
+-salon_id: int
+-seans_id: int
+-koltuk: String
+-next: List_Bilet_Satin_Al
+~root: List_Bilet_Satin_Al
+~iter: List_Bilet_Satin_Al
+--
++List_Bilet_Satin_Al(): ctor
++List_Bilet_Satin_Al(int satin_alinan_bilet_id, int user_id, int salon_id, int seans_id, String koltuk): ctor
++getSatin_alinan_bilet_id(): int
++setSatin_alinan_bilet_id(int satin_alinan_bilet_id): void
++getUser_id(): int
++setUser_id(int user_id): void
++getSalon_id(): int
++setSalon_id(int salon_id): void
++getSeans_id(): int
++setSeans_id(int seans_id): void
++getKoltuk(): String
++setKoltuk(String koltuk): void
++getNext(): List_Bilet_Satin_Al
++setNext(List_Bilet_Satin_Al next): void
++add(int satin_alinan_bilet_id, int user_id, int salon_id, int seans_id, String koltuk): void
++remove(): void
++remove(int satin_alinan_bilet_id): void
++id_Onarim(): void
++sayac(): int
++user_id(int satin_alinan_bilet_id): int
++Salon_id(int satin_alinan_bilet_id): int
++seans_id(int satin_alinan_bilet_id): int
++koltuk(int satin_alinan_bilet_id): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2538</x>
+      <y>2115</y>
+      <w>522</w>
+      <h>594</h>
+    </coordinates>
+    <panel_attributes>code::User
+--
+-user_id: int
+-authority: int
+-user_name: String
+-mail: String
+-password: String
+-next: User_List
+~root: User_List
+~iter: User_List
+--
++User_List(): ctor
++User_List(int user_id, int authority, String mail, String user_name, String password): ctor
++User_List(int user_id, String user_name): ctor
++User(): ctor
++getAuthority(): int
++getUser_id(): int
++setUser_id(int user_id): void
++getUser_name(): String
++setUser_name(String user_name): void
++getMail(): String
++getPassword(): String
++getNext(): User_List
++setNext(User_List next): void
++setMail(String mail): void
++setPassword(String password): void
++add(int user_id, int authority, String mail, String user_name, String password): void
++remove(): void
++remove(int user_id): void
++sayac(): int
++control(String user_name, String password): int
++authority(int user_id, User user_list): int
++search_name(String user_name): boolean
++search_mail(String mail): boolean
++al_user_name(int user_id, User user): String
++_al_user_mail(int user_id, User user): String
++_al_user_password(int user_id, User user): String
++guncelle(int user_id, String name, String mail, String password, User user_list): int
++password(String user_name, String user_mail): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>1107</y>
+      <w>549</w>
+      <h>666</h>
+    </coordinates>
+    <panel_attributes>sinema::Seans
+--
+-salon_id: int
+-film1_id: int
+-film2_id: int
+-film3_id: int
+-film5_id: int
+-film5_id: int
+-next: List_Seans
+~root: List_Seans
+~iter: List_Seans
+--
++List_Seans(): ctor
++List_Seans(int salon_id, int film1_id, int film2_id, int film3_id, int film4_id, int film5_id): ctor
++List_Seans(int seans_id, int salon_id, int film_id): ctor
++getSalon_id(): int
++setSalon_id(int salon_id): void
++getFilm1_id(): int
++setFilm1_id(int film1_id): void
++getFilm2_id(): int
++setFilm2_id(int film2_id): void
++getFilm3_id(): int
++setFilm3_id(int film3_id): void
++getFilm4_id(): int
++setFilm4_id(int film4_id): void
++getFilm5_id(): int
++setFilm5_id(int film5_id): void
++getNext(): List_Seans
++setNext(List_Seans next): void
++add(int salon_id, int film1_id, int film2_id, int film3_id, int film4_id, int film5_id): void
++add(int salon_id, int seans_id, int film_id): void
++remove(): void
++remove2(int salon_id): void
++remove(int film_id): void
++remove(int salon_id, int_seans_id): void
++id_onarım(int salon_id): void
++sayac(): void
++film_id(int salon_id, int seans_id): int
++Seans_Yolla(int seans_id): String
++Seans_id_Yolla(String saat): int
++goruntulenecek(Goruntuleme goruntu, int film_id): Görüntüleme
++dusur(int film_id): void
+
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>855</x>
+      <y>2412</y>
+      <w>459</w>
+      <h>414</h>
+    </coordinates>
+    <panel_attributes>code::Sinema_Salonlari
+--
+-salon_id: int
+-salon_name: String
+-koltuk_sayisi: int
+-next: List_Sinema_Salonlari
+~root: List_Sinema_Salonlari
+~iter: List_Sinema_Salonlari
+--
++List_Sinema_Salonlari(): ctor
++List_Sinema_Salonlari(int salon_id, String salon_name, int koltuk_sayisi): ctor
++getSalon_id(): int
++setSalon_id(int salon_id): void
++getSalon_name(): String
++setSalon_name(String salon_name): void
++getKoltuk_sayisi(): int
++setKoltuk_sayisi(int koltuk_sayisi): void
++getNext(): List_Sinema_Salonlari
++setNext(List_Sinema_Salonlari next): void
++add(int salon_id, String salon_name, int koltuk_sayisi): void
++remove(): void
++remove(int salon_id): void
++id_Onarim(): void
++sayac(): int
++Salon_Name(int salon_id): String
++Koltuk_Sayisi(int salon_id): int
++guncelle(int salon_id, String name, int koltuk_sayisi): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1656</x>
+      <y>2313</y>
+      <w>387</w>
+      <h>315</h>
+    </coordinates>
+    <panel_attributes>code::Satılan
+--
+-id: int
+-koltuk: String
+-next: List_Satılan
++root: List_Satılan
++iter: List_Satılan
+--
++List_Satılan():ctor
++List_Satılan(int id, String koltuk): ctor
++getId(): int
++setId(int id): void
++getKoltuk(): String
++setKoltuk(String koltuk): void
++getNext(): List_Satılan
++setNext(List_Satılan next): void
++add(int salon_id, int seans_id): void
++sayac(): int
++koltuk(int id): String
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>5409</x>
+      <y>135</y>
+      <w>315</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>Sınıf içerisindeki bütün değişkenler en 
+üste tanımlanmamıştır.
+Bu sınıf bölüm bölüm ayrılmıtır ve gerekli yerde
+değişkenler tanımlanmıştır.
+Mesela duyurular için ayrı bir yer ayrıldı ve onun 
+altında vizyondaki filmler için bir yer ayrıldı.
+Vizyondaki filmler için gerekli olan değişkenler ve 
+metotlar o alanda tanımlanmıtşrı. Aynısı duyurular 
+için geçerlidir.
+Diğer bütün işlemler de böyle tanımlanmıştır.
+
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2970</x>
+      <y>1404</y>
+      <w>252</w>
+      <h>378</h>
+    </coordinates>
+    <panel_attributes>bg=red
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;400.0;260.0;400.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2952</x>
+      <y>1944</y>
+      <w>270</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>bg=red
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;190.0;10.0;10.0;280.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3042</x>
+      <y>1197</y>
+      <w>333</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>bg=pink
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;350.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3051</x>
+      <y>1422</y>
+      <w>630</w>
+      <h>729</h>
+    </coordinates>
+    <panel_attributes>bg=pink
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;790.0;680.0;790.0;680.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3042</x>
+      <y>927</y>
+      <w>468</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;500.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3051</x>
+      <y>963</y>
+      <w>738</w>
+      <h>1206</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;1320.0;800.0;1320.0;800.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3024</x>
+      <y>630</y>
+      <w>927</w>
+      <h>477</h>
+    </coordinates>
+    <panel_attributes>bg=orange
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;250.0;10.0;10.0;1010.0;10.0;1010.0;510.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3051</x>
+      <y>1530</y>
+      <w>900</w>
+      <h>657</h>
+    </coordinates>
+    <panel_attributes>bg=orange
+lt=&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;710.0;980.0;710.0;980.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1251</x>
+      <y>612</y>
+      <w>2718</w>
+      <h>1287</h>
+    </coordinates>
+    <panel_attributes>bg=orange
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;1410.0;290.0;1410.0;290.0;10.0;3000.0;10.0;3000.0;530.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1917</x>
+      <y>396</y>
+      <w>2088</w>
+      <h>711</h>
+    </coordinates>
+    <panel_attributes>bg=orange
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0;2300.0;210.0;2300.0;770.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>603</y>
+      <w>3438</w>
+      <h>531</h>
+    </coordinates>
+    <panel_attributes>bg=orange
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;570.0;130.0;570.0;130.0;10.0;3800.0;10.0;3800.0;540.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>4302</x>
+      <y>1080</y>
+      <w>180</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>bg=orange
+lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>180.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1071</x>
+      <y>432</y>
+      <w>2925</w>
+      <h>675</h>
+    </coordinates>
+    <panel_attributes>bg=orange
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0;3230.0;180.0;3230.0;730.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1305</x>
+      <y>621</y>
+      <w>2655</w>
+      <h>1836</h>
+    </coordinates>
+    <panel_attributes>bg=orange
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;2020.0;240.0;2020.0;240.0;10.0;2930.0;10.0;2930.0;520.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>594</y>
+      <w>3411</w>
+      <h>513</h>
+    </coordinates>
+    <panel_attributes>bg=orange
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;3770.0;10.0;3770.0;550.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>3933</x>
+      <y>1503</y>
+      <w>306</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Bu sınıfın kompozisyon ve kaltıtım rengi turucnudur
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>3501</x>
+      <y>936</y>
+      <w>297</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Bu sınıfın kompozisyon ve kaltıtım rengi beyazdır
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>3366</x>
+      <y>1395</y>
+      <w>297</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Bu sınıfın kompozisyon ve kaltıtım rengi Pembedir
+bg=pink
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>3213</x>
+      <y>1953</y>
+      <w>306</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Bu sınıfın kompozisyon ve kaltıtım rengi Kırmızıdır
+bg=red
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>4482</x>
+      <y>1809</y>
+      <w>306</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Bu sınıfın kompozisyon ve kaltıtım rengi sarıdır
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3051</x>
+      <y>1845</y>
+      <w>1440</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;380.0;1580.0;370.0;1580.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3006</x>
+      <y>567</y>
+      <w>1539</w>
+      <h>306</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;320.0;10.0;10.0;1690.0;10.0;1690.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2007</x>
+      <y>558</y>
+      <w>2547</w>
+      <h>1116</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;1220.0;260.0;1220.0;260.0;20.0;2810.0;10.0;2810.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2133</x>
+      <y>549</y>
+      <w>2430</w>
+      <h>675</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;730.0;110.0;730.0;110.0;20.0;2680.0;10.0;2680.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2079</x>
+      <y>540</y>
+      <w>2493</w>
+      <h>261</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;270.0;160.0;270.0;160.0;20.0;2750.0;10.0;2750.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1251</x>
+      <y>531</y>
+      <w>3330</w>
+      <h>1350</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;1480.0;280.0;1480.0;280.0;30.0;3680.0;10.0;3680.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1260</x>
+      <y>522</y>
+      <w>3330</w>
+      <h>675</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;730.0;260.0;730.0;260.0;30.0;3680.0;10.0;3680.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1260</x>
+      <y>513</y>
+      <w>3339</w>
+      <h>324</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;340.0;250.0;340.0;250.0;30.0;3690.0;10.0;3690.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1980</x>
+      <y>1845</y>
+      <w>2520</w>
+      <h>873</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;870.0;10.0;950.0;2780.0;950.0;2780.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>5094</x>
+      <y>2385</y>
+      <w>306</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Bu sınıfın kompozisyon ve kaltıtım rengi yeşildir
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3051</x>
+      <y>2187</y>
+      <w>2052</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>bg=green
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;20.0;2260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2988</x>
+      <y>504</y>
+      <w>2115</w>
+      <h>369</h>
+    </coordinates>
+    <panel_attributes>bg=green
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;390.0;10.0;20.0;2330.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2007</x>
+      <y>495</y>
+      <w>3096</w>
+      <h>1152</h>
+    </coordinates>
+    <panel_attributes>bg=green
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;1260.0;230.0;1260.0;230.0;20.0;3420.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2133</x>
+      <y>486</y>
+      <w>2970</w>
+      <h>693</h>
+    </coordinates>
+    <panel_attributes>bg=green
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;750.0;80.0;750.0;80.0;20.0;3280.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2079</x>
+      <y>477</y>
+      <w>3024</w>
+      <h>297</h>
+    </coordinates>
+    <panel_attributes>bg=green
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;310.0;130.0;310.0;130.0;20.0;3340.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>4842</x>
+      <y>1440</y>
+      <w>261</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>bg=green
+lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;270.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1251</x>
+      <y>468</y>
+      <w>3852</w>
+      <h>1377</h>
+    </coordinates>
+    <panel_attributes>bg=green
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;1510.0;250.0;1510.0;250.0;20.0;4260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1260</x>
+      <y>459</y>
+      <w>3843</w>
+      <h>720</h>
+    </coordinates>
+    <panel_attributes>bg=green
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;780.0;230.0;780.0;230.0;20.0;4250.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1260</x>
+      <y>450</y>
+      <w>3843</w>
+      <h>369</h>
+    </coordinates>
+    <panel_attributes>bg=green
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;390.0;220.0;390.0;220.0;20.0;4250.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1305</x>
+      <y>2421</y>
+      <w>3825</w>
+      <h>315</h>
+    </coordinates>
+    <panel_attributes>bg=green
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;330.0;4230.0;330.0;4230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>387</x>
+      <y>1764</y>
+      <w>4752</w>
+      <h>1134</h>
+    </coordinates>
+    <panel_attributes>bg=green
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1240.0;5260.0;1230.0;5260.0;740.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2700</x>
+      <y>1404</y>
+      <w>27</w>
+      <h>729</h>
+    </coordinates>
+    <panel_attributes>bg=blue
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;790.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>2502</x>
+      <y>1368</y>
+      <w>306</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Bu sınıfın kompozisyon ve kaltıtım rengi Mavidir
+
+bg=blue
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>711</y>
+      <w>2124</w>
+      <h>1368</h>
+    </coordinates>
+    <panel_attributes>bg=blue
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;10.0;140.0;1500.0;2340.0;1490.0;2340.0;780.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>702</x>
+      <y>414</y>
+      <w>1989</w>
+      <h>1656</h>
+    </coordinates>
+    <panel_attributes>bg=blue
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>290.0;10.0;10.0;10.0;10.0;1820.0;2190.0;1810.0;2190.0;1110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1251</x>
+      <y>1404</y>
+      <w>1431</w>
+      <h>657</h>
+    </coordinates>
+    <panel_attributes>bg=blue
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;440.0;100.0;440.0;100.0;710.0;1570.0;700.0;1570.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1260</x>
+      <y>1188</y>
+      <w>1413</w>
+      <h>864</h>
+    </coordinates>
+    <panel_attributes>bg=blue
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0;100.0;940.0;1550.0;930.0;1550.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1260</x>
+      <y>828</y>
+      <w>1404</w>
+      <h>1215</h>
+    </coordinates>
+    <panel_attributes>bg=blue
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0;110.0;1330.0;1540.0;1320.0;1540.0;650.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2007</x>
+      <y>1404</y>
+      <w>648</w>
+      <h>369</h>
+    </coordinates>
+    <panel_attributes>bg=blue
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;390.0;700.0;390.0;700.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2133</x>
+      <y>1215</y>
+      <w>513</w>
+      <h>549</h>
+    </coordinates>
+    <panel_attributes>bg=blue
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;10.0;40.0;590.0;550.0;590.0;550.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2079</x>
+      <y>792</y>
+      <w>558</w>
+      <h>963</h>
+    </coordinates>
+    <panel_attributes>bg=blue
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0;110.0;1050.0;600.0;1050.0;600.0;690.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1224</x>
+      <y>1404</y>
+      <w>1494</w>
+      <h>1026</h>
+    </coordinates>
+    <panel_attributes>bg=blue
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;1120.0;10.0;750.0;1640.0;740.0;1640.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>342</x>
+      <y>1404</y>
+      <w>2367</w>
+      <h>684</h>
+    </coordinates>
+    <panel_attributes>bg=blue
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;410.0;10.0;740.0;2610.0;730.0;2610.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1602</x>
+      <y>1899</y>
+      <w>369</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Bu sınıfın kompozisyon ve kaltıtım rengi Misket Limon'dur.
+bg=#AFB42B
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1782</x>
+      <y>1566</y>
+      <w>27</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>bg=#AFB42B
+lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2007</x>
+      <y>1404</y>
+      <w>972</w>
+      <h>522</h>
+    </coordinates>
+    <panel_attributes>bg=#AFB42B
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>1060.0;10.0;1060.0;560.0;10.0;560.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1593</x>
+      <y>1035</y>
+      <w>369</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Bu sınıfın kompozisyon ve kaltıtım rengi Teal Mavisi'dir.
+bg=#008080
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1746</x>
+      <y>1062</y>
+      <w>27</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>bg=#008080
+lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2079</x>
+      <y>855</y>
+      <w>432</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>bg=#008080
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>460.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2934</x>
+      <y>1404</y>
+      <w>27</w>
+      <h>729</h>
+    </coordinates>
+    <panel_attributes>bg=#0091EA
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;790.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>2547</x>
+      <y>2646</y>
+      <w>315</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Bu sınıfın kompozisyon ve kaltıtım rengi Açık Mavidir.
+bg=#0091EA
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>9</x>
+      <y>1737</y>
+      <w>369</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Bu sınıfın kompozisyon ve kaltıtım rengi Mor'dur.
+bg=#AA00FF
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>1404</y>
+      <w>2439</w>
+      <h>612</h>
+    </coordinates>
+    <panel_attributes>bg=#AA00FF
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>2690.0;10.0;2690.0;660.0;10.0;650.0;10.0;410.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1665</x>
+      <y>2583</y>
+      <w>369</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Bu sınıfın kompozisyon ve kaltıtım rengi Siyahtır.
+bg=black
+fg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1971</x>
+      <y>1404</y>
+      <w>954</w>
+      <h>927</h>
+    </coordinates>
+    <panel_attributes>bg=black
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>1040.0;10.0;1040.0;540.0;180.0;540.0;180.0;960.0;10.0;960.0;10.0;1010.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>918</x>
+      <y>1071</y>
+      <w>369</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Bu sınıfın kompozisyon ve kaltıtım rengi Koyu kırmızıdır
+bg=#D50000
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>972</x>
+      <y>1098</y>
+      <w>27</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>bg=#D50000
+lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>990</x>
+      <y>1566</y>
+      <w>27</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>bg=#00E5FF
+lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1260</x>
+      <y>936</y>
+      <w>1647</w>
+      <h>1179</h>
+    </coordinates>
+    <panel_attributes>bg=#D50000
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>1810.0;530.0;1810.0;1280.0;80.0;1290.0;80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>891</x>
+      <y>1908</y>
+      <w>369</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Bu sınıfın kompozisyon ve kaltıtım rengi Açık Mavidir.
+bg=#00E5FF
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1242</x>
+      <y>1404</y>
+      <w>1647</w>
+      <h>567</h>
+    </coordinates>
+    <panel_attributes>bg=#00E5FF
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>1810.0;10.0;1810.0;610.0;10.0;610.0</additional_attributes>
+  </element>
+</diagram>
